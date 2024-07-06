@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URL Shortener</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles */
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+    .gif-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .gif-container img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-8 offset-md-2">
+        <div class="form-container">
+          <h1 class="text-center mb-4">URL Shortener</h1>
+          <form action="/shorten" method="POST">
+            <div class="form-group">
+              <label for="originalUrl">Enter URL to shorten:</label>
+              <input type="url" class="form-control" id="originalUrl" name="originalUrl" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Shorten URL</button>
+          </form>
+        </div>
+        <!-- Image container -->
+        <div class="gif-container">
+          <h3>Discover the magic of URL Shortener!</h3>
+          <img src="https://th.bing.com/th/id/OIP.LKWa-T2w9FuakNFK8E0qhAAAAA?rs=1&pid=ImgDetMain" alt="URL Shortener Image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
